@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Tạo form cơ bản</title>
+</head>
+<style>
+    body {
+        font-family: "Lucida Sans Unicode",serif;
+    }
+</style>
+<body>
+<form method="get" action="simpleform.html"></form>
+<h1>Order Form</h1>
+<p>Bạn muốn mua gì?</p>
+<select>
+    <option>Cafe</option>
+    <option>Nước chanh</option>
+    <option>Coca</option>
+</select>
+<p>Bạn muốn mua số lượng bao nhiêu?</p>
+    <input type="radio" name="rd"/> 1 - $10 <br>
+    <input type="radio" name="rd"/> 2 - $20 <br>
+    <input type="radio" name="rd"/> 3 - $30 <br>
+</select>
+<p>Họ và tên<span style="color: red">*</span></p>
+    <input type="text" name="name"/>
+<p>Email</p>
+    <input type="text" name="email"/>
+<p>Số điện thoại</p>
+    <input type="text" name="phonenumber" size="10"/>
+<br>
+<br>
+<br>
+<input type="button" name="submitbutton" value="Gửi đi">
+</body>
+</html>
