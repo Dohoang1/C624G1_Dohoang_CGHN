@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>demo onmouse</title>
+</head>
+<body>
+
+<p onclick="do_something()" onmouseover="mouseover()" onmouseout="mouseout()" id="demo">doan nay de test</p>
+
+<script>
+
+    function mouseover(){
+        document.getElementById("demo").style.color="red";
+    }
+    function mouseout(){
+        document.getElementById("demo").style.color="blue";
+    }
+
+    function do_something(){
+        alert("bam thu xem ntn a")
+    }
+</script>
+
+</body>
+</html>
