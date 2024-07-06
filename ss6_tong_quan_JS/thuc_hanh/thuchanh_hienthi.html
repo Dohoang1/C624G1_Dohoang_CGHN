@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Thuc hanh hien thi dau ra</title>
+</head>
+<body>
+
+<button onclick="showmes()">clickme</button>
+
+<script>
+    function showmes(){
+        alert('OK');
+    }
+
+</script>
+
+<div id="divmes"></div>
+<button type="button" onclick="showmes2()">click2</button>
+
+<script>
+    function showmes2(){
+        document.getElementById('divmes').innerHTML='OK';
+    }
+</script>
+
+<button type="button" onclick="showmes3()">click3</button>
+<script>
+    function showmes3(){
+        document.write('hello');
+    }
+</script>
+
+<button type="button" onclick="showmes4()">click4</button>
+
+<script>
+    function showmes4(){
+        console.log('check');
+    }
+</script>
+
+<button type="button" onclick="alert('welll')">click5</button>
+
+
+</body>
+</html>
