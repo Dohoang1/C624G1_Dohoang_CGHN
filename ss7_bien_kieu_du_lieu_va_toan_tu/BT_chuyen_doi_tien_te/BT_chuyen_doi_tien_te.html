@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Bài tập chuyển đổi tiền tệ</title>
+</head>
+<body>
+<table style="width: 100%">
+    <thead style="text-align: left">
+    <tr>
+        <th>Amount</th>
+        <th>From Currency</th>
+        <th>To Currency</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr>
+        <td><input type="number" id="amount"></td>
+        <td><select id="from">
+            <option id="VND">Viet Nam</option>
+            <option id="USD">USD</option>
+        </select></td>
+        <td><select id="to">
+            <option id="USD">USD</option>
+            <option id="VND">Viet Nam</option>
+        </select></td>
+        <td><button onclick="convertmoney()">Convert</button></td>
+    </tr>
+    </tbody>
+
+</table>
+
+<p id="result"></pid>
+    <script src="BT_chuyen_doi_tien_te.js"></script>
+</body>
+</html>
