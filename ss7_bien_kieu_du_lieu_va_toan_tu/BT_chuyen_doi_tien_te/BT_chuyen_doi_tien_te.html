@@ -5,8 +5,8 @@
     <title>Bài tập chuyển đổi tiền tệ</title>
 </head>
 <body>
-<table style="width: 100%">
-    <thead style="text-align: left">
+<table>
+    <thead>
     <tr>
         <th>Amount</th>
         <th>From Currency</th>
@@ -15,22 +15,22 @@
     </thead>
     <tbody>
     <tr>
-        <td><input type="number" id="amount"></td>
+        <td><input id="amount" type="number"></td>
         <td><select id="from">
-            <option id="VND">Viet Nam</option>
-            <option id="USD">USD</option>
+            <option value="1">Viet Nam</option>
+            <option value="25400">Dollar</option>
+            <option value="158">Yen</option>
         </select></td>
         <td><select id="to">
-            <option id="USD">USD</option>
-            <option id="VND">Viet Nam</option>
+            <option value="1">Viet Nam</option>
+            <option value="25400">Dollar</option>
+            <option value="158">Yen</option>
         </select></td>
-        <td><button onclick="convertmoney()">Convert</button></td>
+        <td><button onclick="convert()">Convert</button></td>
     </tr>
     </tbody>
-
 </table>
-
-<p id="result"></pid>
-    <script src="BT_chuyen_doi_tien_te.js"></script>
+<p id="result">Result</p>
+<script src="demo1.js"></script>
 </body>
 </html>

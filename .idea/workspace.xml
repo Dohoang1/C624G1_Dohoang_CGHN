@@ -1,22 +1,36 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
   <component name="ChangeListManager">
     <list default="true" id="58989747-f105-46c1-a150-2f28c98b54e9" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/ss5_html_form_&amp;_table/bai_tap/baitap_formdongian1.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ss4_git_html/bai_tap/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/ss4_git_html/bai_tap/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ss7_bien_kieu_du_lieu_va_toan_tu/BT_chuyen_doi_tien_te/BT_chuyen_doi_tien_te.html" beforeDir="false" afterPath="$PROJECT_DIR$/ss7_bien_kieu_du_lieu_va_toan_tu/BT_chuyen_doi_tien_te/BT_chuyen_doi_tien_te.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ss7_bien_kieu_du_lieu_va_toan_tu/BT_chuyen_doi_tien_te/BT_chuyen_doi_tien_te.js" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="JavaScript File" />
+      </list>
+    </option>
+  </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="ProjectColorInfo"><![CDATA[{
-  "associatedIndex": 3
-}]]></component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 3
+}</component>
   <component name="ProjectId" id="2imMnZzHCTk4uVELnN9g6N59lqN" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="1" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
@@ -25,6 +39,10 @@
   "keyToString": {
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "git-widget-placeholder": "main",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
     "nodejs_package_manager_path": "npm",
     "vue.rearranger.settings.migration": "true"
   }
@@ -45,6 +63,7 @@
       <option name="presentableId" value="Default" />
       <updated>1720091469348</updated>
       <workItem from="1720091469623" duration="52000" />
+      <workItem from="1720499064926" duration="2594000" />
     </task>
     <servers />
   </component>

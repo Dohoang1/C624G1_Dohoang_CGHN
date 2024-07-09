@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Kiểm tra ngày trong tuần</title>
+</head>
+<body>
+<h1>Kiểm tra số vừa nhập là ngày thứ mấy trong tuần</h1>
+<label>Vui lòng nhập số</label>
+<input id="numB" type="number">
+<button onclick="submit()">Xác nhận</button>
+<p id="result"></p>
+</body>
+
+<script>
+    function submit(){
+        let numB= +document.getElementById('numB').value;
+        if(numB==1){
+            document.getElementById('result').innerHTML="Chủ Nhật";
+        } else if(numB==2){
+            document.getElementById('result').innerHTML="Thứ Hai";
+        } else if(numB==3){
+            document.getElementById('result').innerHTML="Thứ Ba";
+        } else if(numB==4){
+            document.getElementById('result').innerHTML="Thứ Tư";
+        } else if(numB==5){
+            document.getElementById('result').innerHTML="Thứ Năm";
+        } else if(numB==6){
+            document.getElementById('result').innerHTML="Thứ Sáu";
+        } else if(numB==7){
+            document.getElementById('result').innerHTML="Thứ Bảy";
+        } else if(numB>7){
+            document.getElementById('result').innerHTML="Không phải ngày trong tuần";
+        } else if(numB<1){
+            document.getElementById('result').innerHTML="Không phải ngày trong tuần";
+        }
+    }
+</script>
+</html>

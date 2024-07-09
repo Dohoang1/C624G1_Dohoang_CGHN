@@ -1,0 +1,12 @@
+table{
+    width: 50%;
+    height: 300px;
+    border-collapse: collapse;
+    font-family: Arial,sans-serif;
+}
+button  {
+    height: 65px;
+    width: 65px;
+    text-align: center;
+
+}
