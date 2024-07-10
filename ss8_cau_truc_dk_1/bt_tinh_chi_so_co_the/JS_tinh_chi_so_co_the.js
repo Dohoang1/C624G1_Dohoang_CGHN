@@ -1,17 +1,19 @@
 function submit() {
-    let weight = +document.getElementById("weight").value;
-    let height = +document.getElementById("height").value;
-    let bmi = (weight / (Math.pow(height, 2)));
+    let weight = parseFloat(document.getElementById('weight').value);
+    let height = parseFloat(document.getElementById('height').value) / 100;//doi cm sang m
 
-   document.getElementById('bmi').innerHTML=("Bmi: " + bmi);
+    let bmi = weight / (height * height);
+    let resultText = "Your BMI is " + bmi + ". ";
 
     if (bmi < 18.5) {
-        result.textContent = "Underweight";
-    } else if ((bmi < 25) && (bmi >= 18.5)) {
-        result.textContent = "Normal";
-    } else if ((bmi < 30) && (bmi >= 25)) {
-        result.textContent = "Overweight";
-    } else if (bmi >= 30) {
-        result.textContent = "Obese";
+        resultText += "Underweight";
+    } else if (bmi < 25) {
+        resultText += "Normal weight";
+    } else if (bmi < 30) {
+        resultText += "Overweight";
+    } else {
+        resultText += "Obese";
     }
+
+    document.getElementById('result').innerText = resultText;
 }
