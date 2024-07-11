@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>BT máy tính đơn giản</title>
+</head>
+<body>
+
+<style>
+
+ button {
+     height: 25px;
+     width: 30px;
+
+ }
+
+</style>
+
+<table style="border: 3px solid ; border-collapse: collapse">
+    <tr>
+        <td colspan="3"><input id="result" disabled /></td>
+        <td><button onclick="clearS()">C</button></td>
+    </tr>
+    <tr>
+        <td><button onclick="display('1')">1</button></td>
+        <td><button onclick="display('2')">2</button></td>
+        <td><button onclick="display('3')">3</button></td>
+        <td><button onclick="display('+')">+</button></td>
+    </tr>
+    <tr>
+        <td><button onclick="display('4')">4</button></td>
+        <td><button onclick="display('5')">5</button></td>
+        <td><button onclick="display('6')">6</button></td>
+        <td><button onclick="display('-')">-</button></td>
+    </tr>
+    <tr>
+        <td><button onclick="display('7')">7</button></td>
+        <td><button onclick="display('8')">8</button></td>
+        <td><button onclick="display('9')">9</button></td>
+        <td><button onclick="display('*')">*</button></td>
+    </tr>
+    <tr>
+        <td><button onclick="display('.')">.</button></td>
+        <td><button onclick="display('0')">0</button></td>
+        <td><button onclick="calculate()">=</button></td>
+        <td><button onclick="display('/')">/</button></td>
+    </tr>
+</table>
+
+<script src="JS_simple_calculator.js"></script>
+
+</body>
+</html>
