@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>BT 2</title>
+</head>
+<body>
+<h5>Câu lệnh nào nhận vào giá trị từ 1 ô input. Viết code nhận a và b từ 2 ô input và hiển thị S = a*b ra thẻ h1</h5>
+
+<label>Nhập a</label> <input id="a" type="number"> <br>
+<label>Nhập b</label> <input id="b" type="number"> <br>
+<button onclick="calculate()" >Tính S = a*b</button>
+<h1 id="result"></h1>
+
+<script>
+    function calculate() {
+        let a = +document.getElementById('a').value;
+        let b = +document.getElementById('b').value;
+        let s = a * b ;
+    document.getElementById('result').innerHTML=(s);
+    }
+</script>
+</body>
+</html>
