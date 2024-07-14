@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<h2>Hiển thị ra 20 số trong dãy fibonacci đầu tiên</h2>
+<script>
+
+    let fib1 = 1;
+    let fib2 = 1;
+    let sumfib = fib1 + fib2;
+
+    document.write(fib1 + "<br>");
+    document.write(fib2 + "<br>");
+
+    for (let i = 3; i <= 20; i++) {
+        let nextFib = fib1 + fib2;
+        sumfib += nextFib;
+        document.write(nextFib + "<br>");
+        fib1 = fib2;
+        fib2 = nextFib;
+    }
+    document.write('Tổng của 20 số đầu tiên trong dãy fibonacci là : ' + sumfib)
+
+    fib1 = 1;
+    fib2 = 1;
+
+    for (let i = 1; i <= 20 ; i++) {
+        nextFib = fib1 + fib2;
+        if (nextFib % 5 === 0) {
+            document.write("<br>" + "Số đầu tiên trong dãy Fibonacci chia hết cho 5 là : " + nextFib);
+            break;
+        }
+        fib1 = fib2;
+        fib2 = nextFib;
+    }
+
+</script>
+</body>
+</html>
