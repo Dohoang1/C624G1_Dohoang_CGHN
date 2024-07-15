@@ -5,13 +5,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="58989747-f105-46c1-a150-2f28c98b54e9" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/ss11_cau_truc_lap_2/mini_exam/b3e.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ss11_cau_truc_lap_2/mini_exam/b3e.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.name" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.name" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ss9_cau_truc_dk_2/bt_puzzle/JSbt_puzzle.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ss9_cau_truc_dk_2/bt_puzzle/bt_puzzle.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ss11_cau_truc_lap_2/mini_exam/.idea/.name" beforeDir="false" afterPath="$PROJECT_DIR$/ss11_cau_truc_lap_2/mini_exam/.idea/.name" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ss11_cau_truc_lap_2/mini_exam/b3d.html" beforeDir="false" afterPath="$PROJECT_DIR$/ss11_cau_truc_lap_2/mini_exam/b3d.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ss11_cau_truc_lap_2/mini_exam/b3d.js" beforeDir="false" afterPath="$PROJECT_DIR$/ss11_cau_truc_lap_2/mini_exam/b3d.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ss11_cau_truc_lap_2/bt/bt6.html" beforeDir="false" afterPath="$PROJECT_DIR$/ss11_cau_truc_lap_2/bt/bt6.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -45,6 +42,7 @@
     "DefaultHtmlFileTemplate": "HTML File",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "git-widget-placeholder": "main",
+    "last_opened_file_path": "C:/Users/Admin/Desktop/C624G1_Dohoang_CGHN",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -72,6 +70,7 @@
       <workItem from="1720499064926" duration="2594000" />
       <workItem from="1720774654233" duration="1245000" />
       <workItem from="1720784514459" duration="1679000" />
+      <workItem from="1721013313601" duration="3083000" />
     </task>
     <servers />
   </component>
