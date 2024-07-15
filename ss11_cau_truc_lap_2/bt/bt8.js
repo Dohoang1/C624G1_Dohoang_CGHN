@@ -2,8 +2,9 @@ function playG() {
     let max = +prompt('Hãy nhập số lớn nhất để giới hạn trò chơi!')
     rdn = Math.floor(Math.random() * max) + 1;
     let att = 0;
+    let guess;
     while (att < 3) {
-        let guess = +prompt("Nhập số bạn đoán (lần " + (att + 1) + "):" );
+        guess = +prompt("Nhập số bạn đoán (lần " + (att + 1) + "):" );
         att++;
         if (guess === rdn) {
             alert("Chúc mừng! Bạn đã đoán đúng số!");
