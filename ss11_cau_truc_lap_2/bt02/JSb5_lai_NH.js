@@ -1,11 +1,15 @@
 function checkM() {
 let money = +document.getElementById('money').value;
 let month = +document.getElementById('month').value;
-let rate = 0.06;
-let period = month / 12;
-let monthlyrate = rate / 12;
-let amount = money * Math.pow(1 + monthlyrate, period * 12);
-let interestA = amount - money;
-result.textContent = ("Số tiền cuối cùng là : " + amount.toFixed(2) + "VNĐ");
-interest.textContent = ("Tền lãi : " + interestA.toFixed(2) + "VNĐ");
+let rate = 0.06 / 12 ;
+let interest;
+let sum = 0;
+
+for ( let i = 0 ; i < month ; i++ ) {
+    interest = money * rate;
+    money += interest;
+    sum += interest;
+}
+result.textContent=("Số tiền cuối cùng là : " + money.toFixed(2))
+resultI.textContent=("Tiền lãi là : " + sum.toFixed(2))
 }

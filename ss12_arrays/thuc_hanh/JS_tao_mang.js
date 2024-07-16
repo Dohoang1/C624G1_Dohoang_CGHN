@@ -1,15 +1,18 @@
 let x = 0;
-let array = Array();
-function addEle() {
+let array = [];
+
+function addE() {
     array[x] = document.getElementById('txtValue').value;
-    alert("Element: " +array[x] + " added at index " + x);
+    alert("Đã thêm " + array[x]);
     x++;
     document.getElementById('txtValue').value = "";
 }
-function dis() {
+
+function disA() {
     let e = "<hr/>";
-    for (let i = 0 ; i <array.length ; i++) {
-        e += "Element " + i + " = " + array[i] + "<br>";
+    for (let i = 0 ; i < array.length; i++) {
+        e +="At " + i + " = " + array[i] + "<hr/>";
     }
-    document.getElementById('result').innerHTML = e;
+document.getElementById("result").innerHTML= e ;
 }
+
