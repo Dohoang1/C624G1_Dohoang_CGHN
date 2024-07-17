@@ -5,18 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="58989747-f105-46c1-a150-2f28c98b54e9" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/.name" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.name" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ss11_cau_truc_lap_2/bt02/JSb5_lai_NH.js" beforeDir="false" afterPath="$PROJECT_DIR$/ss11_cau_truc_lap_2/bt02/JSb5_lai_NH.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ss11_cau_truc_lap_2/bt02/b5_lai_NH.html" beforeDir="false" afterPath="$PROJECT_DIR$/ss11_cau_truc_lap_2/bt02/b5_lai_NH.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ss12_arrays/thuc_hanh/JS_ban_caro.js" beforeDir="false" afterPath="$PROJECT_DIR$/ss12_arrays/thuc_hanh/JS_ban_caro.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ss12_arrays/thuc_hanh/JS_dao_nguoc.js" beforeDir="false" afterPath="$PROJECT_DIR$/ss12_arrays/thuc_hanh/JS_dao_nguoc.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ss12_arrays/thuc_hanh/JS_tao_mang.js" beforeDir="false" afterPath="$PROJECT_DIR$/ss12_arrays/thuc_hanh/JS_tao_mang.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ss12_arrays/thuc_hanh/JS_tim_gt_lon_nhat.js" beforeDir="false" afterPath="$PROJECT_DIR$/ss12_arrays/thuc_hanh/JS_tim_gt_lon_nhat.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ss12_arrays/thuc_hanh/JS_tim_gt_trong_mang.js" beforeDir="false" afterPath="$PROJECT_DIR$/ss12_arrays/thuc_hanh/JS_tim_gt_trong_mang.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ss12_arrays/thuc_hanh/tao_mang.html" beforeDir="false" afterPath="$PROJECT_DIR$/ss12_arrays/thuc_hanh/tao_mang.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ss9_cau_truc_dk_2/bt_good_fast_cheap/JSbt_good_fast_cheap.js" beforeDir="false" afterPath="$PROJECT_DIR$/ss9_cau_truc_dk_2/bt_good_fast_cheap/JSbt_good_fast_cheap.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ss9_cau_truc_dk_2/bt_good_fast_cheap/bt_good_fast_cheap.html" beforeDir="false" afterPath="$PROJECT_DIR$/ss9_cau_truc_dk_2/bt_good_fast_cheap/bt_good_fast_cheap.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -83,6 +72,7 @@
       <workItem from="1721047182618" duration="1000" />
       <workItem from="1721055260066" duration="2144000" />
       <workItem from="1721099762601" duration="7649000" />
+      <workItem from="1721183651236" duration="4012000" />
     </task>
     <servers />
   </component>
