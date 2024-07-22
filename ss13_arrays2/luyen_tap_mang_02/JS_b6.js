@@ -8,8 +8,6 @@ function addE() {
             if (arr[i] == '-') {
                 arr[i] = '_';
             }
-
         }
-        c = arr.toString();
-        document.getElementById("result").innerHTML = c;
+        document.getElementById("result").innerHTML = arr.join("");
     }
