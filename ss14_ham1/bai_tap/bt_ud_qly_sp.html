@@ -4,16 +4,45 @@
     <meta charset="UTF-8">
     <title>Title</title>
 
+
+    <style>
+
+        table {
+            border-collapse: collapse;
+            width: 500px;
+        }
+        thead {
+            background-color: blue;
+            color: white;
+            text-align: center;
+        }
+        tr, td {
+            border: 1px solid black;
+        }
+        input {
+            height: 30px;
+        }
+        .addNP {
+            height: 36px;
+        }
+
+    </style>
 </head>
 <body>
 <h3>Add New Product</h3>
-<input placeholder="New Product" id="newP" type="text">
-<button onclick="addnewP()">Add</button>
+<input placeholder="Enter Name Product" id="newP" type="text">
+<button class="addNP" onclick="addnewP()">Add Product</button>
 <br> <br>
 <hr> <br>
-<button onclick="displayAllP()">Display All Product</button>
-<p><span>Product Name</span> <span id="count" style="float: right">***</span></p> <br>
-
+<table>
+    <thead>
+    <tr>
+        <td>#</td>
+        <td>Name <span style="float: right" id="count"></span></td>
+    </tr>
+    </thead>
+    <tbody id="result"></tbody>
+</table>
 
 
 <script src="JS_bt_ud_qly_sp.js"></script>
