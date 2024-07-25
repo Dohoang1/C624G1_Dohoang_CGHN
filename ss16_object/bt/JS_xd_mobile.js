@@ -1,58 +1,65 @@
-function MobileMachine(battery, texting, inbox, sentbox) {
+function Mobile (name) {
+    this.name = name;
+    this.battery = 100;
+    this.draftMessage = "";
+    this.inbox = [];
+    this.sentMessage = [];
+    this.isOn = false;
 
-    //các đặc điểm theo đề bài yêu cầu
-    this.battery = battery;
-    this.texting = "";
-    this.inbox = inbox=[];
-    this.sentbox = sentbox=[];
+    this.checkPower = function () {
+        return this.isOn ? "On" : "Off";
+    }
+    this.powerOn = function () {
+        this.isOn = true;
+    }
+    this.powerOff = function () {
+        this.isOn = false;
+    }
+    this.chargeBattery = function () {
+        this.battery = 100;
+    }
+    this.composeMessage = function (message) {
+        if (this.isOn && this.battery > 0) {
+            this.draftMessage = message;
+            this.battery--;
+        }
+    }
+    this.receiverMessage = function (message) {
+            this.inbox.push(message);
+            this.battery--;
+    }
 
-    //các đặc điểm phục vụ cho chức năng
-    this.statusM = machineStatus;
-    this.message = message = inbox[i];
-
-    //các chức năng theo đề bài yêu cầu
-
-    //check trạng thái đt
-    this.checkActivityStatus = function () {
-        if (statusM !== -1 || battery > 0) {
-            return true;
-        } else {
-            return false;
+    //Phan soan tin va luu tin nhan!!
+    this.sendMessage = function (receiver) {
+        if (this.isOn && this.battery > 0) {
+            receiver.receiverMessage(this.draftMessage);
+            this.sentMessage.push(this.draftMessage);
+            this.draftMessage = "";
+            this.battery--;
         }
     }
 
-    //bật hoặc tắt đt
-    this.setStatus = function (boolean) {
-        if (!confirm("Turn mobile on?")) {
-            return statusM = -1;
-        } else {
-            return statusM = true;
+
+    this.checkInbox = function () {
+        if (this.isOn && this.battery > 0) {
+            return this.inbox;
+            this.battery--;
         }
     }
-
-    //sạc đt
-    this.chargingBattery = function () {
-        return battery = 100;
-    }
-
-    //soạn và gửi tin nhắn
-    this.editTexting = function (texting, mobile) {
-        texting = prompt("enter message");
-        if (confirm("send massage?") === true) {
-            return sentbox.push(texting);
+    this.checkSentMessage = function () {
+        if (this.isOn && this.battery > 0) {
+            return this.sentMessage;
+            this.battery--;
         }
-        battery--;
-    }
-
-    //nhận tin nhắn
-    this.reveiceMessage = function (Message) {
-        inbox.push(Message);
-        battery--;
-    }
-
-    //xem tin đã gửi
-    this.checkSentbox = function () {
-       return console.log(sentbox);
-        battery--;
     }
 }
+
+let Nokia = new Mobile("Nokia");
+let iPhone = new Mobile("iPhone");
+
+Nokia.powerOn();
+Nokia.composeMessage("Hello iPhone!");
+Nokia.sendMessage(iPhone);
+
+iPhone.powerOn();
+console.log(iPhone.checkInbox());
