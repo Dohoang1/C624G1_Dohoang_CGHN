@@ -28,8 +28,7 @@ function Mobile (name) {
             this.inbox.push(message);
             this.battery--;
     }
-
-    //Phan soan tin va luu tin nhan!!
+    
     this.sendMessage = function (receiver) {
         if (this.isOn && this.battery > 0) {
             receiver.receiverMessage(this.draftMessage);

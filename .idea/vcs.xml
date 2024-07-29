@@ -2,5 +2,6 @@
 <project version="4">
   <component name="VcsDirectoryMappings">
     <mapping directory="" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/ss16_object/bt/bt_simple_game/objects" vcs="Git" />
   </component>
 </project>
