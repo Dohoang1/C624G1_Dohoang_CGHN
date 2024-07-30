@@ -8,7 +8,8 @@ let basket = {
     y: canvas.height - 30,
     dx: 10,
     movingLeft: false,
-    movingRight: false
+    movingRight: false,
+    color : getRandomColor()
 };
 
 function getRandomColor() {
@@ -26,7 +27,7 @@ let beer = {
     width: 20,
     height: 30,
     dy: 3,
-    color: getRandomColor()
+    color: getRandomColor(),
 };
 
 let score = 0;
@@ -34,20 +35,20 @@ let isGameOver = false;
 
 function drawBackground() {
     let gradient = ctx.createLinearGradient(0, 0, 0, canvas.height);
-    gradient.addColorStop(0, '#87CEEB'); // Sky blue
-    gradient.addColorStop(1, '#00BFFF'); // Deep sky blue
+    gradient.addColorStop(0, '#2accfd'); // Sky blue
+    gradient.addColorStop(1, '#c9efff'); // Deep sky blue
 
     ctx.fillStyle = gradient;
     ctx.fillRect(0, 0, canvas.width, canvas.height);
 }
 
 function drawBasket() {
-    ctx.fillStyle = "#8B4513";
+    ctx.fillStyle = basket.color;
     ctx.fillRect(basket.x, basket.y, basket.width, basket.height);
 }
 
 function drawBeer() {
-    ctx.fillStyle = beer.color;
+    ctx.fillStyle = beer.color;    ;
     ctx.fillRect(beer.x, beer.y, beer.width, beer.height);
 }
 
@@ -78,6 +79,7 @@ function update() {
     for (let i = 1; i <= score / 5; i++) {
         beer.dy = 3 + i;
     }
+
     beer.y += beer.dy;
 
     if (
@@ -89,7 +91,6 @@ function update() {
         resetBeer();
     }
 
-
     if (beer.y + beer.height >= canvas.height) {
         isGameOver = true;
     }
@@ -98,11 +99,9 @@ function update() {
 function resetBeer() {
     beer.x = Math.random() * (canvas.width - beer.width);
     beer.y = 0;
-    beer.color = getRandomColor();
     beer.dy = 3;
+    beer.color = getRandomColor();
 }
-
-
 
 function gameLoop() {
     drawBackground();
@@ -111,10 +110,9 @@ function gameLoop() {
     drawScore();
     let img = document.getElementById("frog");
 
-
     if (isGameOver) {
-        img.src = "frog2.jfif"
         drawGameOver();
+        img.src = "frog2.jfif"
     } else {
         if (score >=10) img.src = "frog4.jpg"
         if (score >=20) img.src = "frog5.jpg"
