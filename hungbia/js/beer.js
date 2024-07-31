@@ -18,14 +18,17 @@ class Beer {
         this.ctx.closePath();
     }
 
+    move() {
+        this.clear();
+        this.moveDown();
+        this.draw();
+    }
+
     moveDown() {
         this.y += this.dy;
     }
 
-    resetBeer(x, y, dy, color) {
-        this.x = x;
-        this.y = y;
-        this.dy = dy;
-        this.color = color;
+    clear(){
+        this.ctx.clearRect(this.x, this.y, this.width, this.height);
     }
 }
