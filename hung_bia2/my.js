@@ -1,7 +1,6 @@
-
 let canvas = document.getElementById("gameCanvas");
 let ctx = canvas.getContext("2d");
-let basket = new Basket(canvas.width / 2 - 50, canvas.height - 30, 150, 20, 10);
+let basket = new Basket(canvas.width / 2, canvas.height - 65, 100, 60, 10,'imgs/basket.jpg');
 let score = new Score();
 let background = new Background(getRandomColor(),"white");
 let isGameOver = false;
@@ -17,7 +16,7 @@ function getRandomColor() {
 }
 
 let beers = [
-    new Beer(Math.random() * (canvas.width - 20), 0, 20, 30, 3, getRandomColor())
+    new Beer(Math.random() * (canvas.width - 20), 0, 28, 50, 3, 'imgs/beer.png')
 ];
 
 function drawGameOver() {
@@ -44,10 +43,10 @@ function update() {
             beer.x <= basket.x + basket.width
         ) {
             score.increase();
-            beer.resetBeer(Math.random() * (canvas.width - 20), Math.randomInt(-600,-200), 3, getRandomColor());
+            beer.resetBeer(Math.random() * (canvas.width - 20), Math.randomInt(-600,-200), 3, 'imgs/beer.png');
 
             if (score.value % 10 === 0) {
-                beers.push(new Beer(Math.random() * (canvas.width - 20), Math.randomInt(-1400,-600), 20, 30, 3, getRandomColor()));
+                beers.push(new Beer(Math.random() * (canvas.width - 20), Math.randomInt(-1400,-600), 28, 50, 3, 'imgs/beer.png'));
                 lvl.value++;
             }
         }
