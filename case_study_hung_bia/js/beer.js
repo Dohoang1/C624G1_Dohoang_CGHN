@@ -6,16 +6,14 @@ class Beer {
         this.height = height;
         this.dy = dy;
         this.color = color;
-        this.canvas = document.getElementById("gameCanvas");
-        this.ctx = this.canvas.getContext("2d");
     }
 
-    draw() {
-        this.ctx.beginPath();
-        this.ctx.rect(this.x, this.y, this.width, this.height);
-        this.ctx.fillStyle = this.color;
-        this.ctx.fill();
-        this.ctx.closePath();
+    draw(ctx) {
+        ctx.beginPath();
+        ctx.rect(this.x, this.y, this.width, this.height);
+        ctx.fillStyle = this.color;
+        ctx.fill();
+        ctx.closePath();
     }
 
     moveDown() {

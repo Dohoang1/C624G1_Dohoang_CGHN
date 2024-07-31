@@ -1,25 +1,9 @@
+
 let canvas = document.getElementById("gameCanvas");
 let ctx = canvas.getContext("2d");
-
-let basket = new Basket(
-    canvas.width / 2 - 75,
-    canvas.height - 30,
-    150,
-    20,
-    10
-);
-
-let beer1 = new Beer(
-    Math.random() * (canvas.width - 20),
-    0,
-    20,
-    30,
-    3,
-    getRandomColor()
-);
-
+let basket = new Basket(canvas.width / 2 - 50, canvas.height - 30, 150, 20, 10);
 let score = new Score();
-
+let background = new Background(getRandomColor(),"white");
 let isGameOver = false;
 
 function getRandomColor() {
@@ -31,6 +15,9 @@ function getRandomColor() {
     return color;
 }
 
+let beers = [
+    new Beer(Math.random() * (canvas.width - 20), 0, 20, 30, 3, getRandomColor())
+];
 
 function drawGameOver() {
     ctx.fillStyle = "#FF0000";
@@ -43,29 +30,37 @@ function update() {
 
     basket.update(canvas.width);
 
-    for (let i = 1; i <= score.value / 5; i++) {
-        beer1.dy = 3 + i;
-    }
+    beers.forEach((beer, index) => {
+        beer.moveDown();
 
-    if (
-        beer1.y + beer1.height >= basket.y &&
-        beer1.x + beer1.width >= basket.x &&
-        beer1.x <= basket.x + basket.width
-    ) {
-        score.increase();
-        beer1.resetBeer(Math.random() * (canvas.width - 20), 0, 3, getRandomColor());
-    }
+        Math.randomInt = function (min, max) {
+            return Math.floor(Math.random() * (max - min)) + min;
+        }
 
-    if (beer1.y + beer1.height >= canvas.height) {
-        isGameOver = true;
-    }
+        if (
+            beer.y + beer.height >= basket.y &&
+            beer.x + beer.width >= basket.x &&
+            beer.x <= basket.x + basket.width
+        ) {
+            score.increase();
+            beer.resetBeer(Math.random() * (canvas.width - 20), Math.randomInt(-600,-200), 3, getRandomColor());
+
+            if (score.value % 10 === 0) {
+                beers.push(new Beer(Math.random() * (canvas.width - 20), Math.randomInt(-1400,-600), 20, 30, 3, getRandomColor()));
+            }
+        }
+
+        if (beer.y + beer.height >= canvas.height) {
+            isGameOver = true;
+        }
+    });
 }
 
 function gameLoop() {
-    drawBackground();
+    ctx.clearRect(0, 0, canvas.width, canvas.height);
+    background.draw();
     basket.draw(ctx);
-    beer1.draw();
-    beer1.moveDown();
+    beers.forEach(beer => beer.draw(ctx));
     score.draw(ctx);
 
     let img = document.getElementById("frog");
